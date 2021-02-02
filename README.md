@@ -29,3 +29,7 @@ y% = no
 x would get money
 y would get no money
 
+
+sudo mysqldump -u root -p db_X > db_X.sql
+
+Women can't keep secrets.
