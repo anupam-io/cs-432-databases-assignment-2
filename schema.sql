@@ -15,6 +15,8 @@ create table Products(
     
     description varchar(500) default null,
     manufacture_date date default null,
+    added_time datetime not null,
+
     price int(10) default null,
     author varchar(200) default null,
     

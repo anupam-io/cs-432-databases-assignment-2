@@ -21,28 +21,37 @@ insert into Retailers (email, name, city_name)values
 ('10person@gmail.com', 'Shop 10', 'Ahmedabad')
 ;
 
-insert into Products (name, retailer_id, type, description, manufacture_date, price) values 
-("Book1", 1, 'Novels', 'best book', '2020-01-01', 200),
-("Book2", 1, 'Novels', 'best book', '2020-01-01', 200),
-("Book3", 1, 'Novels', 'best book', '2020-01-01', 200),
-("Book4mi", 1, 'Novels', 'best book', '2020-01-01', 200),
-("Book5", 1, 'Novels', 'best book', '2020-01-01', 200),
-("Cloth1", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth2", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth3", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth4mi", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth5", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Book1", 3, 'Novels', 'best book', '2020-01-01', 200),
-("Book2", 3, 'Novels', 'best book', '2020-01-01', 200),
-("Book3", 3, 'Novels', 'best book', '2020-01-01', 200),
-("Book4", 3, 'Novels', 'best book', '2020-01-01', 200),
-("Book5", 3, 'Novels', 'best book', '2020-01-01', 200),
-("Cloth1", 4, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth2", 4, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth3", 4, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth4", 5, 'Clothes', 'shiny cloth', '2020-02-09', 700),
-("Cloth5", 5, 'Clothes', 'shiny cloth', '2020-02-09', 700)
+insert into Products (added_time, name, retailer_id, type, description, manufacture_date, price) values 
+(now(), "Book1", 1, 'Novels', 'best book', '2020-01-01', 200),
+(now(), "Book2", 1, 'Novels', 'best book', '2020-01-01', 200),
+(now(), "Book3", 1, 'Novels', 'best book', '2020-01-01', 200),
+(now(), "Book4mi", 1, 'Novels', 'best book', '2020-01-01', 200),
+(now(), "Book5", 1, 'Novels', 'best book', '2020-01-01', 200),
+(now(), "Cloth1", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
+(now(), "Cloth2", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
+(now(), "Cloth3", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
+(now(), "Cloth4mi", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
+('2007-01-01 06:15:05', "Cloth5", 2, 'Clothes', 'shiny cloth', '2020-02-09', 700),
+('2007-01-01 06:15:05', "Book1", 3, 'Novels', 'best book', '2020-01-01', 200),
+('2007-01-01 06:15:05', "Book2", 3, 'Novels', 'best book', '2020-01-01', 200),
+('2007-01-01 06:15:05', "Book3", 3, 'Novels', 'best book', '2020-01-01', 200),
+('2007-01-01 06:15:05', "Book4", 3, 'Novels', 'best book', '2020-01-01', 200),
+('2007-01-01 06:15:05', "Book5", 3, 'Novels', 'best book', '2020-01-01', 200),
+('2007-01-01 06:15:05', "nextGenLeptop1", 4, 'Electronics', 'made for lazy gamers', '2020-02-09', 7000),
+('2007-01-01 06:15:05', "nextGenLeptop2", 4, 'Electronics', 'made for lazy gamers', '2020-02-09', 7000),
+('2007-01-01 06:15:05', "nextGenLeptop3", 4, 'Electronics', 'made for lazy gamers', '2020-02-09', 12000),
+('2007-01-01 06:15:05', "nextGenLeptop4", 5, 'Electronics', 'made for lazy gamers', '2020-02-09', 15000),
+('2007-01-01 06:15:05', "-dark-product-", 5, 'Electronics', 'made for lazy gamers', '2020-02-09', 23000)
 ;
+
+
+insert into Products (author, added_time, name, retailer_id, type, description, manufacture_date, price) values 
+('Dan Brown', now(), "Deep inside Mysql Part 1", 4, 'Novels', 'for school students', '2020-02-09', 7000),
+('Dan Brown', now(), "Deep inside Mysql Part 2", 4, 'Novels', 'for school students', '2020-02-09', 7000),
+('Dan Brown', now(), "Deep inside Mysql Part 3", 4, 'Novels', 'for school students', '2020-02-09', 7000)
+;
+
+
 
 insert into Users (signup_time, email, password, name, city, phone)values
 ('2007-01-01 06:15:05', 'myemail1@gmail.com', '1234', 'John Doe', 'Madrid', '9191919191'),
@@ -147,7 +156,7 @@ insert into Cart (user_id, product_id, quantity)values
 (1, 2, 10),
 (1, 2, 10),
 (1, 2, 10),
-(1, 2, 10),
+(1, 2, 1),
 (2, 1, 10),
 (2, 1, 10),
 (2, 1, 10),
@@ -175,13 +184,36 @@ insert into Purchase (user_id, product_id, quantity, total_price, date_of_purcha
 (2, 2, 10, 1000, '2020-01-01'),
 (3, 2, 10, 1000, '2020-01-01'),
 (4, 2, 10, 1000, '2020-01-01'),
-(5, 2, 10, 1000, '2020-01-01'),
-(1, 2, 10, 1000, '2020-01-01'),
-(2, 2, 10, 1000, '2020-01-01'),
-(3, 2, 10, 1000, '2020-01-01'),
-(4, 2, 10, 1000, '2020-01-01'),
-(5, 2, 10, 1000, '2020-01-01'),
-(7, 2, 10, 1000, '2020-01-01'),
-(7, 2, 10, 1000, '2020-01-01'),
-(7, 2, 10, 1000, '2020-01-01')
+(5, 2, 10, 1000, '2000-01-01'),
+(1, 2, 10, 1000, '2000-01-01'),
+(2, 2, 10, 1000, '2000-01-01'),
+(3, 2, 10, 1000, '2000-01-01'),
+(4, 2, 10, 1000, '2000-01-01'),
+(5, 2, 10, 1000, '2000-01-01'),
+(7, 2, 10, 1000, '2000-01-01'),
+(7, 20, 10, 1000, '2000-01-01'),
+(7, 20, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01'),
+(7, 20, 10, 1000, '2000-01-01'),
+(7, 20, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01'),
+(7, 20, 10, 1000, '2000-01-01'),
+(7, 20, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01'),
+(8, 2, 10, 1000, '2000-01-01'),
+(8, 20, 10, 1000, '2000-01-01'),
+(8, 20, 10, 1000, '2000-01-01'),
+(8, 1, 10, 1000, '2000-01-01'),
+(8, 1, 10, 1000, '2000-01-01'),
+(8, 20, 10, 1000, '2000-01-01'),
+(8, 20, 10, 1000, '2000-01-01'),
+(8, 1, 10, 1000, '2000-01-01'),
+(8, 1, 10, 1000, '2000-01-01'),
+(8, 20, 10, 1000, '2000-01-01'),
+(8, 20, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01'),
+(7, 1, 10, 1000, '2000-01-01')
 ;
