@@ -11,7 +11,7 @@ create table holi_Deals as (
 );
 
 update holi_Deals
-set price = price+15*price/100
+set discount = 15
 ;
 
-select name, price from holi_Deals;
+select name, price, discount from holi_Deals;

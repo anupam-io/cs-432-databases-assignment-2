@@ -18,6 +18,7 @@ create table Products(
     added_time datetime not null,
 
     price int(10) default null,
+    discount int(10) default null,
     author varchar(200) default null,
     
     foreign key (retailer_id) references Retailers(id),

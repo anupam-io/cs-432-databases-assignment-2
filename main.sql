@@ -15,3 +15,8 @@ source Q12.sql;
 source Q13.sql;
 source Q14.sql;
 source Q15.sql;
+source Q16.sql;
+source Q17.sql;
+source Q18.sql;
+source Q19.sql;
+source Q20.sql;
