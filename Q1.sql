@@ -260,26 +260,10 @@ insert into Purchase (user_id, product_id, quantity, total_price, date_of_purcha
 (7, 1, 10, 1000, '2000-01-01')
 ;
 
--- insert into Orders (purchase_id)values
--- (1),
--- (2),
--- (3),
--- (4),
--- (5),
--- (6),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
--- (1),
+insert into Orders (order_id, purchase_id)values
+(1, 1),
+(1, 2),
+(1, 3),
+(2, 4),
+(2, 9)
+;

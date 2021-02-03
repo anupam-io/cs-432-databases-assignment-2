@@ -127,7 +127,7 @@ CREATE TABLE `Products` (
 
 LOCK TABLES `Products` WRITE;
 /*!40000 ALTER TABLE `Products` DISABLE KEYS */;
-INSERT INTO `Products` VALUES (1,'Book1','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',220,NULL,NULL),(2,'Book2','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',220,NULL,NULL),(3,'Book3','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',200,NULL,NULL),(4,'Book4mi','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',200,NULL,NULL),(5,'Book5','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',200,NULL,NULL),(6,'Cloth1','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,NULL,NULL),(7,'Cloth2','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,NULL,NULL),(8,'Cloth3','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,NULL,NULL),(9,'Cloth4mi','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,NULL,NULL),(10,'Cloth5','Clothes',NULL,2,'shiny cloth','2020-02-09','2007-01-01 06:15:05',700,NULL,NULL),(11,'Book1','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(12,'Book2','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(13,'Book3','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(14,'Book4','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(15,'Book5','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(16,'nextGenLeptop1','Electronics',NULL,4,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',7000,NULL,NULL),(17,'nextGenLeptop2','Electronics',NULL,4,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',7000,NULL,NULL),(18,'nextGenLeptop3','Electronics',NULL,4,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',12000,NULL,NULL),(19,'nextGenLeptop4','Electronics',NULL,5,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',15000,NULL,NULL),(20,'-dark-product-','Electronics',NULL,5,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',23000,NULL,NULL),(21,'Deep inside Mysql Part 1','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:07:13',7000,NULL,'Dan Brown'),(22,'Deep inside Mysql Part 2','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:07:13',7000,NULL,'Dan Brown'),(23,'Deep inside Mysql Part 3','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:07:13',7000,NULL,'Dan Brown'),(24,'Dell Super 009','Electronics','Laptop',1,'old laptop','2020-01-01','2021-02-03 16:07:13',50000,NULL,NULL),(25,'HP Bro 669','Electronics','Laptop',2,'light laptop','2020-01-01','2021-02-03 16:07:13',60000,NULL,NULL),(26,'Google XX 0','Electronics','Laptop',3,'beta version','2020-01-01','2021-02-03 16:07:13',70000,NULL,NULL);
+INSERT INTO `Products` VALUES (1,'Book1','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',220,NULL,NULL),(2,'Book2','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',220,NULL,NULL),(3,'Book3','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',200,NULL,NULL),(4,'Book4mi','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',200,NULL,NULL),(5,'Book5','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',200,NULL,NULL),(6,'Cloth1','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,NULL,NULL),(7,'Cloth2','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,NULL,NULL),(8,'Cloth3','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,NULL,NULL),(9,'Cloth4mi','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,NULL,NULL),(10,'Cloth5','Clothes',NULL,2,'shiny cloth','2020-02-09','2007-01-01 06:15:05',700,NULL,NULL),(11,'Book1','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(12,'Book2','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(13,'Book3','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(14,'Book4','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(15,'Book5','Novels',NULL,3,'best book','2020-01-01','2007-01-01 06:15:05',200,NULL,NULL),(16,'nextGenLeptop1','Electronics',NULL,4,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',7000,NULL,NULL),(17,'nextGenLeptop2','Electronics',NULL,4,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',7000,NULL,NULL),(18,'nextGenLeptop3','Electronics',NULL,4,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',12000,NULL,NULL),(19,'nextGenLeptop4','Electronics',NULL,5,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',15000,NULL,NULL),(20,'-dark-product-','Electronics',NULL,5,'made for lazy gamers','2020-02-09','2007-01-01 06:15:05',23000,NULL,NULL),(21,'Deep inside Mysql Part 1','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:16:35',7000,NULL,'Dan Brown'),(22,'Deep inside Mysql Part 2','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:16:35',7000,NULL,'Dan Brown'),(23,'Deep inside Mysql Part 3','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:16:35',7000,NULL,'Dan Brown'),(24,'Dell Super 009','Electronics','Laptop',1,'old laptop','2020-01-01','2021-02-03 16:16:36',50000,NULL,NULL),(25,'HP Bro 669','Electronics','Laptop',2,'light laptop','2020-01-01','2021-02-03 16:16:36',60000,NULL,NULL),(26,'Google XX 0','Electronics','Laptop',3,'beta version','2020-01-01','2021-02-03 16:16:36',70000,NULL,NULL);
 /*!40000 ALTER TABLE `Products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -221,6 +221,33 @@ INSERT INTO `Reviews` VALUES (1,1,'quite well',1),(2,1,'quite well',2),(3,1,'qui
 UNLOCK TABLES;
 
 --
+-- Table structure for table `Searches`
+--
+
+DROP TABLE IF EXISTS `Searches`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Searches` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int unsigned NOT NULL,
+  `term` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `Searches_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Searches`
+--
+
+LOCK TABLES `Searches` WRITE;
+/*!40000 ALTER TABLE `Searches` DISABLE KEYS */;
+INSERT INTO `Searches` VALUES (1,1,'ook'),(2,1,'ext'),(3,1,'ook'),(4,1,'ext'),(5,1,'ook'),(6,1,'ext'),(7,1,'ook'),(8,1,'ext'),(9,1,'ook'),(10,1,'ext'),(11,1,'ook'),(12,1,'ext'),(13,1,'ook'),(14,1,'ext'),(15,1,'ook'),(16,1,'ext'),(17,1,'ook'),(31,1,'ook'),(32,1,'ext'),(33,1,'lep');
+/*!40000 ALTER TABLE `Searches` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `Users`
 --
 
@@ -305,7 +332,7 @@ CREATE TABLE `holi_Deals` (
 
 LOCK TABLES `holi_Deals` WRITE;
 /*!40000 ALTER TABLE `holi_Deals` DISABLE KEYS */;
-INSERT INTO `holi_Deals` VALUES (1,'Book1','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',220,15,NULL),(2,'Book2','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',220,15,NULL),(3,'Book3','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',200,15,NULL),(4,'Book4mi','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',200,15,NULL),(5,'Book5','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:07:13',200,15,NULL),(6,'Cloth1','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,15,NULL),(7,'Cloth2','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,15,NULL),(8,'Cloth3','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,15,NULL),(9,'Cloth4mi','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:07:13',700,15,NULL),(21,'Deep inside Mysql Part 1','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:07:13',7000,15,'Dan Brown'),(22,'Deep inside Mysql Part 2','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:07:13',7000,15,'Dan Brown'),(23,'Deep inside Mysql Part 3','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:07:13',7000,15,'Dan Brown'),(24,'Dell Super 009','Electronics','Laptop',1,'old laptop','2020-01-01','2021-02-03 16:07:13',50000,15,NULL),(25,'HP Bro 669','Electronics','Laptop',2,'light laptop','2020-01-01','2021-02-03 16:07:13',60000,15,NULL),(26,'Google XX 0','Electronics','Laptop',3,'beta version','2020-01-01','2021-02-03 16:07:13',70000,15,NULL);
+INSERT INTO `holi_Deals` VALUES (1,'Book1','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',220,15,NULL),(2,'Book2','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',220,15,NULL),(3,'Book3','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',200,15,NULL),(4,'Book4mi','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',200,15,NULL),(5,'Book5','Novels',NULL,1,'best book','2020-01-01','2021-02-03 16:16:35',200,15,NULL),(6,'Cloth1','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,15,NULL),(7,'Cloth2','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,15,NULL),(8,'Cloth3','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,15,NULL),(9,'Cloth4mi','Clothes',NULL,2,'shiny cloth','2020-02-09','2021-02-03 16:16:35',700,15,NULL),(21,'Deep inside Mysql Part 1','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:16:35',7000,15,'Dan Brown'),(22,'Deep inside Mysql Part 2','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:16:35',7000,15,'Dan Brown'),(23,'Deep inside Mysql Part 3','Novels',NULL,4,'for school students','2020-02-09','2021-02-03 16:16:35',7000,15,'Dan Brown'),(24,'Dell Super 009','Electronics','Laptop',1,'old laptop','2020-01-01','2021-02-03 16:16:36',50000,15,NULL),(25,'HP Bro 669','Electronics','Laptop',2,'light laptop','2020-01-01','2021-02-03 16:16:36',60000,15,NULL),(26,'Google XX 0','Electronics','Laptop',3,'beta version','2020-01-01','2021-02-03 16:16:36',70000,15,NULL);
 /*!40000 ALTER TABLE `holi_Deals` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -318,4 +345,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-03 16:07:57
+-- Dump completed on 2021-02-03 16:24:24

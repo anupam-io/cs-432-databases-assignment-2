@@ -2,7 +2,7 @@
 -- all new products by 15% and 
 -- store it as a new table holi_Deals
 
-drop table holi_Deals;
+drop table if exists holi_Deals;
 
 create table holi_Deals as (
     select * from Products

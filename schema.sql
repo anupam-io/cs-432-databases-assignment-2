@@ -88,7 +88,7 @@ create table Cart(
 ); 
 
 -- Purchase
-CREATE table Purchase(
+create table Purchase(
     id int(10) unsigned auto_increment primary key,
     user_id int(10) unsigned,
     product_id int(10) unsigned not null,
@@ -101,7 +101,9 @@ CREATE table Purchase(
 );
 
 create table Orders(
-    purchase_id int(10) unsigned not null unique,
+    id int(10) unsigned auto_increment primary key,
+    order_id int(10) unsigned,
+    purchase_id int(10) unsigned,
 
     foreign key (purchase_id) references Purchase(id)
 );
