@@ -1,2 +1,2 @@
-select added_time from Products
+select name, added_time from Products
 where added_time >= '2011/11/11';

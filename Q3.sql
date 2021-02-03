@@ -10,4 +10,4 @@ where exists(
     where product_id = id
 );
 
-select * from Products;
+select name, price from Products;

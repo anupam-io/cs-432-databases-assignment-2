@@ -5,3 +5,5 @@ insert into Addresses (user_id, description)values
 (1, 'Jamnagar Gujarat'),
 (1, 'Ahmedabad')
 ;
+
+select * from Addresses where user_id = 1;
