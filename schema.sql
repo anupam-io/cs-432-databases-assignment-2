@@ -49,11 +49,11 @@ create table Addresses(
 -- Reviews
 create table Reviews(
     id int(10) unsigned auto_increment primary key,
-    user_id int(10) unsigned not null,
+    user_id int(10) unsigned,
     description varchar(500) not null,
     product_id int(10) unsigned not null,
 
-    foreign key (user_id) references Users(id),
+    foreign key (user_id) references Users(id) on delete set null,
     foreign key (product_id) references Products(id)
 );
 
@@ -80,12 +80,12 @@ create table Cart(
 -- Purchase
 create table Purchase(
     id int(10) unsigned auto_increment primary key,
-    user_id int(10) unsigned not null,
+    user_id int(10) unsigned,
     product_id int(10) unsigned not null,
     quantity int(10) unsigned not null,
     total_price int(10) unsigned not null,
     date_of_purchase date not null,
 
-    foreign key (user_id) references Users(id),
+    foreign key (user_id) references Users(id) on delete set null,
     foreign key (product_id) references Products(id)
 );

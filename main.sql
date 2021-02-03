@@ -20,3 +20,4 @@ source Q17.sql;
 source Q18.sql;
 source Q19.sql;
 source Q20.sql;
+source Q21.sql;
