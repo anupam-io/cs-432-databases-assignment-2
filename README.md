@@ -25,4 +25,4 @@
 
  - `source main.sql;`: for reset, schema, all questions.
 
- - `sudo mysqldump X > X.sql;`: exporting the database
+ - `sudo mysqldump X > database_image_X.sql;`: exporting the database
