@@ -21,19 +21,19 @@ create table Products(
     discount int(10) default null,
     author varchar(200) default null,
     
-    foreign key (retailer_id) references Retailers(id),
+    foreign key (retailer_id) references Retailers(id) ,
     check (type in ('Novels', 'Electronics', 'Clothes'))
 );
 
 -- Users
 create table Users(
     id int(10) unsigned auto_increment primary key,
+    name varchar(50) default null,
     email varchar(50) not null unique,
     password varchar(50) default null,
-    phone varchar(10) default null,
     signup_time datetime default null,
     
-    name varchar(50) default null,
+    phone varchar(10) default null,
     city varchar(50) default null
 );
 
@@ -78,7 +78,7 @@ create table Cart(
 ); 
 
 -- Purchase
-create table Purchase(
+CREATE table Purchase(
     id int(10) unsigned auto_increment primary key,
     user_id int(10) unsigned,
     product_id int(10) unsigned not null,
@@ -88,4 +88,10 @@ create table Purchase(
 
     foreign key (user_id) references Users(id) on delete set null,
     foreign key (product_id) references Products(id)
+);
+
+create table Orders(
+    purchase_id int(10) unsigned not null unique,
+
+    foreign key (purchase_id) references Purchase(id)
 );
