@@ -51,6 +51,11 @@ insert into Products (author, added_time, name, retailer_id, type, description, 
 ('Dan Brown', now(), "Deep inside Mysql Part 3", 4, 'Novels', 'for school students', '2020-02-09', 7000)
 ;
 
+insert into Products (subtype, added_time, name, retailer_id, type, description, manufacture_date, price) values 
+('Laptop', now(), "Dell Super 009", 1, 'Electronics', 'old laptop', '2020-01-01', 50000),
+('Laptop', now(), "HP Bro 669", 2, 'Electronics', 'light laptop', '2020-01-01', 60000),
+('Laptop', now(), "Google XX 0", 3, 'Electronics', 'beta version', '2020-01-01', 70000)
+;
 
 
 insert into Users (signup_time, email, password, name, city, phone)values
@@ -75,6 +80,43 @@ insert into Users (signup_time, email, password, name, city, phone)values
 ('2021-01-01 06:15:05', 'myemail09@gmail.com', '1234', 'Jane Doe', 'Madrid', '9191919191'),
 ('2021-01-01 06:15:05', 'myemail010@gmail.com', '1234', 'Jane Doe', 'Madrid', '9191919191')
 ;
+
+insert into Searches (user_id, term)values
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'ook'),
+(2, 'ext'),
+(2, 'ook'),
+(2, 'ext'),
+(2, 'ook'),
+(2, 'ext'),
+(2, 'ook'),
+(2, 'ext'),
+(2, 'ook'),
+(2, 'ext'),
+(2, 'ook'),
+(2, 'ext'),
+(2, 'ook'),
+(2, 'ext'),
+(1, 'ook'),
+(1, 'ext'),
+(1, 'lep')
+;
+
 
 insert into Addresses(user_id, description)values
 (1, 'Gandhinagar 1, Gujarat'),

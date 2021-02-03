@@ -7,24 +7,24 @@
 -- Based on user's purchase history
 -- finding users who have bought the same product
 -- find products brought by these products
-create table friends as (
-    select user_id from Purchase
-    inner join (
-        select product_id from Purchase
-        where user_id = 1
-    )as t
-    where t.product_id = Purchase.product_id and user_id!=1
-    group by user_id
-);
+-- create table friends as (
+--     select user_id from Purchase
+--     inner join (
+--         select product_id from Purchase
+--         where user_id = 1
+--     )as t
+--     where t.product_id = Purchase.product_id and user_id!=1
+--     group by user_id
+-- );
 
-select name from Products
-inner join (
-    select product_id from Purchase
-    inner join friends
-    where Purchase.id = friends.user_id 
-)as t
-where t.product_id = Products.id
-;
+-- select name from Products
+-- inner join (
+--     select product_id from Purchase
+--     inner join friends
+--     where Purchase.id = friends.user_id 
+-- )as t
+-- where t.product_id = Products.id
+-- ;
 
 
 -- Location based recommendation
@@ -42,5 +42,23 @@ where t.product_id = Products.id
 -- ;
 
 
+-- ;
 
-drop table friends;
+select name from Products
+inner join (
+    select term from Searches
+    where user_id = 1
+    group by term
+)as t
+where Products.name like concat("%",t.term,"%")
+limit 10
+;
+
+
+
+
+
+
+
+
+-- drop table friends;

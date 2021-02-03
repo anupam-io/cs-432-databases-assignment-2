@@ -11,6 +11,7 @@ create table Products(
     id int(10) unsigned auto_increment primary key,
     name varchar(50) not null,
     type varchar(50) not null,
+    subtype varchar(50) default null,
     retailer_id int(10) unsigned not null,
     
     description varchar(500) default null,
@@ -36,6 +37,15 @@ create table Users(
     phone varchar(10) default null,
     city varchar(50) default null
 );
+
+-- Searches
+create table Searches(
+    id int(10) unsigned auto_increment primary key,
+    user_id int(10) unsigned not null,
+    term varchar(50) not null,
+
+    foreign key (user_id) references Users(id)
+); 
 
 -- Addresses
 create table Addresses(
